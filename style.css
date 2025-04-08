@@ -79,6 +79,7 @@ body {
     top: 30px;
     padding: 10px;
     display: none;
+    
 }
  
 .mylearning:hover .mylearning__popup{
@@ -99,12 +100,13 @@ body {
     padding: 10px;
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.75s ease;
+    border: solid #a435f0 1px;
 }
 
 .categories p:hover {
-    background-color: white;
-    color: #a435f0;
+    transition: 0.75s;
+    background-color: transparent;
+    color: black;
     border: solid #a435f0 1px;
 }
 
@@ -114,6 +116,7 @@ body {
 
 .sale-image{
     position: relative;
+    
 }
 
 .sale-image__offer{
@@ -124,6 +127,21 @@ body {
     position: absolute;
     left: 100px;
     top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom {
+    0%{
+transform: scale(0);
+opacity: 1;
+    }
+    100%{
+transform: scale(1);
+opacity: 1;
+    }
+    
 }
 
 .recommended {
